@@ -1,0 +1,1 @@
+# Sitecore-Glassmapper-Guid
