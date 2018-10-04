@@ -1,0 +1,15 @@
+﻿@using Company.Feature.AlertToaster.Models
+@using Glass.Mapper.Sc
+@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Data
+@model Company.Feature.AlertToaster.Models.IAlertToaster
+
+<div class="toast @Model.Type.CssStyle">
+    <div class="wrapper">
+        <div class="toast__wrap">
+            <div class="toast__title">@Html.Glass().Editable(m => m.Title)</div>
+            <div class="toast__description">@Html.Glass().Editable(m => m.Content)</div>
+            <a class="toast__close"></a>
+        </div>
+    </div>
+</div>
